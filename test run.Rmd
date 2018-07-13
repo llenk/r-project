@@ -1,0 +1,46 @@
+---
+title: "R-ellen"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## About R
+
+R is a statistical programming language. It is mainly used for data processing and analysis, and has a variety of packages available to more easily accomplish these tasks. 
+
+## Set up 
+
+To start, you'll need to install R. You should also install RStudio, which is a free development environment that provides many useful features specially designed for R code. 
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+labels <- c('Dylan', 'Jason', 'Shelly@nerd.com', 'Shely', 'Shely Dexter', 'shely@gmail.com')
+values <- c(1, 2, 1, 1, 1, 1)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+pie(values, labels = labels, main = 'Most likely to be found studying in the library')
+library(plotrix)
+pie3D(values, labels=labels, explode=0.1,
+  	main='Most likely to be found studying in the library')
+```
+
+Note that the `echo = FALSE` parameter can be added to the code chunk to prevent printing of the R code that generated the plot.
+
+The first plot uses built in functions, and the second uses a library. 
+
+## Next steps
+
+The next step would be become more familiar with R's data structures, and then use more complex packages, such as ggplot2, that can create nicer plots.
